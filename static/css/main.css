@@ -168,9 +168,7 @@ form {
 
 /*设置结果图像*/
 #res-img {
-    text-align: center;
-    width: 600px;
-    height: 450px;
+    margin: 15px auto;
     display: none;
 }
 
