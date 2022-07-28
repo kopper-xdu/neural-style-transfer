@@ -35,8 +35,8 @@ def style_transfer(vgg, decoder, content, style, alpha=1.0,
     return decoder(feat)
 
 
-def main(content_pth='./input/content/custom.jpg',
-         style_pth='./input/style/custom.jpg',
+def main(content_pth='./input/content/1.jpg',
+         style_pth='./input/style/1.jpg',
          content_size=512, style_size=512,
          alpha=1.0, crop=False, device='cuda'):
     save_ext = '.jpg'

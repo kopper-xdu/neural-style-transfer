@@ -10,8 +10,8 @@ async function loadImageFromBuffer(path) {
     let imageData = await Jimp.read(path).then((imageBuffer) => {
         let height = imageBuffer.bitmap.height
         let width = imageBuffer.bitmap.width
-        const x = 600
-        if (height > width && height > x) {
+        const x = 575
+        if (height >= width && height > x) {
             imageBuffer.scale(x / height)
         }
         else if (height < width && width > x) {

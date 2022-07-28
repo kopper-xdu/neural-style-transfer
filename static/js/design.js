@@ -2,6 +2,7 @@ let loadPic1 = document.getElementById('load-pic1');
 let loadPic2 = document.getElementById('load-pic2');
 let imageInput1 = document.getElementById('image1');
 let imageInput2 = document.getElementById('image2');
+let exampleImgs = document.querySelectorAll('.example-img');
 
 loadPic1.onclick = changeRightContent;
 loadPic2.onclick = changeRightContent;
@@ -34,7 +35,6 @@ function changeRightContent(e) {
     let imgContainer1 = document.getElementById('img1');
     let imgContainer2 = document.getElementById('img2');
     let upLoadLabel = document.querySelector('.example-img-container label');
-    let exampleImgs = document.querySelectorAll('.example-img');
 
     let larger = '82%';
     let smaller = '72%';
@@ -54,7 +54,7 @@ function changeRightContent(e) {
         upLoadLabel.setAttribute('for', 'image1');
 
         for (let i = 0; i < exampleImgs.length; ++i) {
-            exampleImgs[i].src = contentImgUrls[i];
+            exampleImgs[i].setAttribute('src', contentImgUrls[i]);
         }
     } else if (e.target.id === 'load-pic2' && rightContent.id === 'wrapper-for-content') {
         rightContent.id = 'wrapper-for-style';
@@ -70,7 +70,7 @@ function changeRightContent(e) {
         upLoadLabel.setAttribute('for', 'image2');
 
         for (let i = 0; i < exampleImgs.length; ++i) {
-            exampleImgs[i].src = styleImgUrls[i];
+            exampleImgs[i].setAttribute('src', styleImgUrls[i]);
         }
     }
 }
@@ -83,7 +83,7 @@ function handleFiles(e) {
     }
 
     let loadPic = e.target.id === 'image1' ?
-        document.getElementById('load-pic1') :
+        document.getElementById('load-pic1'):
         document.getElementById('load-pic2');
 
     function f(e) {
