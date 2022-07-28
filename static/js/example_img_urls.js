@@ -25,14 +25,10 @@ let styleImgUrls = ['../static/style/1.jpg',
     '../static/style/la_muse.jpg',
     '../static/style/picasso_seated_nude_hr.jpg',
     '../static/style/mondrian.jpg',
-    '../static/style/picasso_self_portrait.jpg',
     '../static/style/scene_de_rue.jpg',
     '../static/style/sketch.png',
-    '../static/style/style1.jpg',
     '../static/style/the_resevoir_at_poitiers.jpg',
-    '../static/style/trial.jpg',
-    '../static/style/woman_with_hat_matisse.jpg',
-'../static/style/style1.jpg'];
+    '../static/style/trial.jpg'];
 
 //预加载图片
 let num = 0;
