@@ -16,7 +16,7 @@ async function upLoad(e) {
     //推理并显示结果
     let [result, inferenceTime] = await inference(loadPic1.src, loadPic2.src);
 
-    console.log(inferenceTime);
+    console.log('inference time:', inferenceTime, 's');
 
     for (let i = 0; i < result.data.length; i++) {
         if (result.data[i] > 1) {
