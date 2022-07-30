@@ -24,7 +24,7 @@ function showExampleImg(e) {
         loadPic2.src = e.target.src;
     }
     // 判断upload是否可以解锁
-    if (loadPic1.src.slice(-3) !== 'png' && loadPic2.src.slice(-3) !== 'png') {
+    if (loadPic1.src.slice(-12) !== 'load_pic.png' && loadPic2.src.slice(-12) !== 'load_pic.png') {
         document.getElementById('upload').disabled = "";
     }
 }
