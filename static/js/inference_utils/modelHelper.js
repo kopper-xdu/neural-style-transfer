@@ -1,6 +1,4 @@
 export async function runAdaINModel(session1, preprocessedData1, preprocessedData2) {
-    // Create session and set options. See the docs here for more options:
-    //https://onnxruntime.ai/docs/api/js/interfaces/InferenceSession.SessionOptions.html#graphOptimizationLevel
     const session = await session1;
     console.log('Inference session created');
     // Run inference_utils and get results.
