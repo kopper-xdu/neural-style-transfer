@@ -26,13 +26,6 @@ git clone https://github.com/kopper-xdu/style-transfer.git
 pip install flask
 ```
 
-接着您需要做几处修改：
-
-在 ./templates/index.html 中
-
-- 修改 102 行代码为：`<script src="../static/js/inference_utils/ort.min.js"></script>`
-- 删除 95-97 行代码
-
 然后您可以直接运行该项目：
 ```python
 python app.py
