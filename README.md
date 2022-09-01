@@ -12,6 +12,8 @@
 
 [神经风格迁移在线网站](https://kopper.top)
 
+（请使用最新版本的edge或谷歌浏览器访问）
+
 ## Deployment
 
 #### Usage:
