@@ -2,7 +2,7 @@
 
 ## Introduction
 
-这个仓库是一个由python flask框架建成的web项目，用户能够在线的尝试风格迁移算法。项目的核心功能采用 AdaIN 模型，它可以完成任意风格的迁移，并且该项目的推理计算都在前端完成，依赖onnx runtime在前端搭建神经网络模型。
+这个仓库是一个由python flask框架建成的web项目，用户能够在线的尝试风格迁移算法。项目的核心功能采用 AdaIN 模型，它可以完成任意风格的迁移，并且该项目的推理计算都在前端完成，依赖onnx runtime在前端搭建神经网络模型。 
 
 <img src="static\example\architecture.jpg" style="zoom: 50%;" />
 
