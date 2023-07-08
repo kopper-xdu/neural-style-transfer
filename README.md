@@ -2,34 +2,24 @@
 
 ## Introduction
 
-这个仓库是一个由python flask框架建成的web项目，用户能够在线的尝试风格迁移算法。项目的核心功能采用 AdaIN 模型，它可以完成任意风格的迁移，并且该项目的推理计算都在前端完成，依赖onnx runtime在前端搭建神经网络模型。
+This repository is a web project built by the Python Flask framework that allows users to play with style transfer algorithms online. The core model of the project adopts the AdaIN model, which can transfer any style, and the inference process of this model is done in the frontend by js, relying on onnx runtime to build neural network models.
 
 <img src="static\example\architecture.jpg" style="zoom: 50%;" />
 
-查看 [AdaIN](https://github.com/xunhuang1995/AdaIN-style)， [onnxruntime ](https://onnxruntime.ai/)获取更多信息。
+looking [AdaIN](https://github.com/xunhuang1995/AdaIN-style), [onnxruntime](https://onnxruntime.ai/) for more information
 
 ## Playground Online
 
-[神经风格迁移在线网站](https://kopper.top)
+[Style Transfer Online](https://kopper.top)
 
-（请使用最新版本的edge或谷歌浏览器访问）
+(Please use the latest version of Edge or Google Chrome to access)
 
 ## Deployment
 
 #### Usage:
 
-首先clone该项目：
-```bash
-git clone https://github.com/kopper-xdu/style-transfer.git
-```
-
-您需要安装flask框架： 
 ```python
 pip install flask
-```
-
-然后您可以直接运行该项目：
-```python
 python app.py
 ```
 
