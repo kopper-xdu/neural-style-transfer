@@ -5,7 +5,7 @@ import {runAdaINModel} from "./modelHelper.js";
 async function preload() {
     const start = new Date();
     const session = await ort.InferenceSession
-        .create('https://adain-model-1313055021.cos.ap-nanjing.myqcloud.com/AdaIN.with_runtime_opt.ort',
+        .create('static/AdaIN.with_runtime_opt.ort',
             {executionProviders: ['wasm'], graphOptimizationLevel: 'all'});
     const end = new Date();
     const time = (end.getTime() - start.getTime()) / 1000;
